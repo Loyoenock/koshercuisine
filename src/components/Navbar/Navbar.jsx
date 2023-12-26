@@ -1,64 +1,13 @@
 import React from "react";
+
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-
-import "./Navbar.css";
-
+import logo from "../../assets/logo.png";
 const Navbar = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-
   return (
-    <section className="header">
+    <section className="header-section">
       <div className="container">
         <div className="navbar">
-          <Link to="/" className="logo">
-            <img
-              src="./assets/logo-1.png"
-              alt="logo"
-              className="logo-img"
-              width={80}
-            />
-          </Link>
-
-          <ul className={click ? "nav-item active" : "nav-item"}>
-            <li onClick={handleClick}>
-              <Link to="/" className="navigation">
-                Home
-              </Link>
-            </li>
-            <li onClick={handleClick}>
-              <Link to="/OurCuisine" className="navigation">
-                OurCuisine
-              </Link>
-            </li>
-            <li onClick={handleClick}>
-              <Link to="/about" className="navigation">
-                About Us
-              </Link>
-            </li>
-            <li onClick={handleClick}>
-              <Link to="/shipping" className="navigation">
-                Shipping
-              </Link>
-            </li>
-            <li onClick={handleClick}>
-              <Link to="/contact" className="navigation">
-                Contact Us
-              </Link>
-            </li>
-            <li onClick={handleClick}>
-              <button>Make Order</button>
-            </li>
-          </ul>
-          <div className="mobile-nav" onClick={handleClick}>
-            {click ? (
-              <FaTimes size={25} style={{ color: "white" }} />
-            ) : (
-              <FaBars size={25} style={{ color: "white" }} />
-            )}
-          </div>
+          <img src={logo} alt="logo" className="logo" width={100} />
         </div>
       </div>
     </section>
