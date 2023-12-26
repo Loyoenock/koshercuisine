@@ -33,3 +33,34 @@
 .mobile-nav {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  .mobile-nav {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-item {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .nav-item.active {
+    left: 0;
+  }
+  .nav-item li {
+    padding: 0.938rem 0;
+  }
+  .nav-item .navigation {
+    font-size: 1.875rem;
+  }
+}

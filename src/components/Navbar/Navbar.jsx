@@ -6,6 +6,9 @@ import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
     <section className="header">
       <div className="container">
@@ -19,39 +22,42 @@ const Navbar = () => {
             />
           </Link>
 
-          <ul className="nav-item">
-            <li>
+          <ul className={click ? "nav-item active" : "nav-item"}>
+            <li onClick={handleClick}>
               <Link to="/" className="navigation">
                 Home
               </Link>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <Link to="/OurCuisine" className="navigation">
                 OurCuisine
               </Link>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <Link to="/about" className="navigation">
                 About Us
               </Link>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <Link to="/shipping" className="navigation">
                 Shipping
               </Link>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <Link to="/contact" className="navigation">
                 Contact Us
               </Link>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <button>Make Order</button>
             </li>
           </ul>
-          <div className="mobile-nav">
-            <FaTimes size={25} style={{ color: "white" }} />
-            <FaBars size={25} style={{ color: "white" }} />
+          <div className="mobile-nav" onClick={handleClick}>
+            {click ? (
+              <FaTimes size={25} style={{ color: "white" }} />
+            ) : (
+              <FaBars size={25} style={{ color: "white" }} />
+            )}
           </div>
         </div>
       </div>
