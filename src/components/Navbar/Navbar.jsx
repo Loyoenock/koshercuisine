@@ -4,6 +4,8 @@ import { Link, NavLink } from "react-router-dom";
 
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/logo.png";
+import "./Navbar.css";
+
 const Navbar = () => {
   return (
     <section className="header-section">
@@ -13,36 +15,32 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="logo" width={100} />
           </Link>
           <ul className="nav-item">
-            <li className="nav-link">
-              <NavLink to="/" className="nav-link">
+            <li>
+              <NavLink to="/" className="navigation-link">
                 Home
               </NavLink>
             </li>
-            <li className="nav-link">
-              <NavLink to="/about" className="nav-link">
+            <li>
+              <NavLink to="/about" className="navigation-link">
                 About
               </NavLink>
             </li>
-            <li className="nav-link">
-              <NavLink to="/ourcuisines" className="nav-link">
-                OurCuisines
-              </NavLink>
-            </li>
-            <li className="nav-link">
-              <NavLink to="/shipping" className="nav-link">
-                {" "}
-                Shipping{" "}
-              </NavLink>
-            </li>
-            <li className="nav-link">
-              <NavLink to="/contact" className="nav-link">
-                {" "}
-                Contact
+            <li>
+              <NavLink to="/ourcuisines" className="navigation-link">
+                Our Cuisines
               </NavLink>
             </li>
             <li>
-              <button>Make an Order</button>
+              <NavLink to="/shipping" className="navigation-link">
+                Shipping
+              </NavLink>
             </li>
+            <li>
+              <NavLink to="/Contact" className="navigation-link">
+                Contact
+              </NavLink>
+            </li>
+            <button>Make an Order</button>
           </ul>
           <div className="mobile-menu">
             <FaBars size={22} style={{ color: "white" }} />
