@@ -1,13 +1,46 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:wght@400;500;600;700;900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #f0e595; /* Light Gray or Creamy White */
+  --secondary-color: #000; /* Dark Gray or Charcoal */
+  --text-color: #555555; /* Slightly Darker Gray */
+  --accent-color: #8f0c00; /* Deep Reddish-Brown or Maroon */
+}
+body {
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 3.125rem;
+}
+
+button {
+  font-size: 1rem;
+  text-transform: Capitalize;
+  font-weight: 600;
+  color: var(--secondary-color);
+  background: var(--main-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.875rem;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
 }
