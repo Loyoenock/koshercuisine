@@ -1,0 +1,29 @@
+.hero-section__img {
+  height: 100vh;
+  background-image: url("../../../assets/background.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  position: relative;
+  top: 100px;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  text-align: left;
+}
+.hero-content__title {
+  font-size: var(--main-heading-title);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-content__text {
+  font-size: var(--body-font);
+  font-weight: 400;
+}
+.hero-content__btn {
+  margin-top: var(--button-margin);
+}

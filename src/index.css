@@ -10,6 +10,12 @@
   --secondary-color: #000; /* Dark Gray or Charcoal */
   --text-color: #555555; /* Slightly Darker Gray */
   --accent-color: #8f0c00; /* Deep Reddish-Brown or Maroon */
+  --main-heading-title: 3rem;
+  --headng-title: 2.5rem;
+  --headng-subtitle: 1.75rem;
+  --body-font: 1.22rem;
+  --button-font-size: 1rem;
+  --button-margin: 1.875rem;
 }
 body {
   font-family: "Lora", serif;
@@ -36,11 +42,20 @@ button {
   font-weight: 600;
   color: var(--secondary-color);
   background: var(--main-color);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: 1.875rem;
   cursor: pointer;
 }
 button:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --title-font: 24px;
+    --font-size-regular: 16px;
+    --button-font-size: 14px;
+    --button-margin: 20px;
+  }
 }
