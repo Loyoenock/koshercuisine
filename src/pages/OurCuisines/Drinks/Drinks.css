@@ -1,0 +1,17 @@
+.drinks {
+  padding: 50px 0;
+}
+.drinks h1 {
+  text-align: center;
+  padding: 25px 0;
+}
+.drinks h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .drinks h3 {
+    font-size: 16px;
+  }
+}

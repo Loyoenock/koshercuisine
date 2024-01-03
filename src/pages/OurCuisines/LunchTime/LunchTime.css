@@ -1,0 +1,19 @@
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.lunch-time h1 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.lunch-time p {
+  width: 80%;
+  margin: 20px 0;
+}
+.lunch-time h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
