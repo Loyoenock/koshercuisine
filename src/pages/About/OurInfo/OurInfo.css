@@ -1,0 +1,33 @@
+.our-info__container {
+  padding: 40px 5%;
+  box-sizing: border-box;
+}
+
+.our-info__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-info__content > div {
+  flex: 1 0 18%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .our-info__content {
+    flex-wrap: wrap;
+  }
+  .our-info__content > div {
+    flex: 1 0 100%;
+  }
+}
