@@ -6,7 +6,7 @@ const HeaderImage = (props) => {
     <div
       className="container"
       style={{
-        background: `url(${props.headerbg}) no-repeat bottom center/cover`,
+        background: `url(${props.headerbg}) no-repeat bottom center / cover`,
         height: "60vh",
       }}
     >
