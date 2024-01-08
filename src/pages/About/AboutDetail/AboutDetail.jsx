@@ -29,9 +29,7 @@ const AboutDetail = () => {
           </p>
         </div>
         <div className="about-detail__text">
-          <h2 className="heading-secondary">
-            Discover a Place to Dine and Wine
-          </h2>
+          <h2 className="heading-secondary">A Place to Dine and Wine</h2>
           <h4 className="heading-secondary__subtitle">
             Savor the Atmosphere, Indulge in Culinary Excellence
           </h4>

@@ -32,6 +32,16 @@
 .mobile-menu {
   display: none;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-item .navigation-link {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .mobile-menu {

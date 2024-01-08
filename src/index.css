@@ -13,7 +13,11 @@
   --main-heading-title: 3rem;
   --headng-title: 2.5rem;
   --headng-subtitle: 1.75rem;
+  --main-heading-title-tablet: 2rem;
+  --main-heading-title-mobile: 1.75rem;
   --body-font: 1.22rem;
+  --body-font-tablet: 1.1rem;
+  --body-font-mobile: 1rem;
   --button-font-size: 1rem;
   --button-margin: 1.875rem;
 }
@@ -49,6 +53,18 @@ button {
 }
 button:hover {
   opacity: 0.8;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --main-heading-title: 2.5rem;
+    --headng-title: 2rem;
+    --headng-subtitle: 1.5rem;
+    --main-heading-title-tablet: 1.75rem;
+    --main-heading-title-mobile: 1.5rem;
+    --body-font: 1.1rem;
+    --body-font-tablet: 1rem;
+    --body-font-mobile: 0.9rem;
+  }
 }
 
 @media (max-width: 768px) {
