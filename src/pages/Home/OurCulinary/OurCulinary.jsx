@@ -7,7 +7,8 @@ import slider03 from "../../../assets/slider-03.jpg";
 import slider04 from "../../../assets/slider-04.jpg";
 import slider05 from "../../../assets/slider-05.jpg";
 import slider06 from "../../../assets/slider-06.jpg";
-import { BsFillStarFill } from "react-icons/bs";
+import spice from "../../../assets/spice-1.png";
+
 import Slider from "react-slick";
 
 import "./OurCulinary.css";
@@ -76,36 +77,18 @@ const OurCulinary = () => {
           </div>
         </div>
         <div className="slider-footer__container">
-          <div className="slide_card slider-card__left">
-            <img src={slider01} alt="slider" className="slider-card__image" />
-
-            <div className="slider-card__content">
-              <div className="slider-card__title">
-                <BsFillStarFill className="slider-card__icon" />
-                <h3 className="slider-card__heading">Assorted Ingredients</h3>
-              </div>
-              <p className="slider-card__text">
-                We use only the freshest ingredients to ensure the highest
-                quality of taste and nutrition. Our chefs handpick each
-                ingredient to make sure that every dish is a masterpiece.
-              </p>
-            </div>
+          <div className="slider-card slider-card__left">
+            <img src={spice} alt="slider" className="slider-card__image" />
           </div>
-
-          <div className="slide_card slider-card__right">
-            <img src={slider02} alt="slider" className="slider-card__image" />
-
-            <div className="slider-card__content">
-              <div className="slider-card__title">
-                <BsFillStarFill className="slide-card__icon" />
-                <h3 className="slider-card__heading">Reservation</h3>
-              </div>
-              <p className="slider-card__text">
-                Reserve your spot and let us craft moments of culinary delight
-                tailored just for you. We can't wait to welcome you to Kosher
-                Cuisine
-              </p>
+          <div className="slider-card__content slider-card__right">
+            <div className="slider-card__title">
+              <h3 className="slider-card__heading">Assorted Ingredients</h3>
             </div>
+            <p className="slider-card__text">
+              We use only the freshest ingredients to ensure the highest quality
+              of taste and nutrition. Our chefs handpick each ingredient to make
+              sure that every dish is a masterpiece.
+            </p>
           </div>
         </div>
       </div>

@@ -2,14 +2,14 @@ import React from "react";
 import "./Showcase.css";
 
 import showcase1 from "../../../assets/headerimage.jpg";
-import showcase2 from "../../../assets/headerimg.jpg";
+import showcase2 from "../../../assets/coffee-3.jpg";
 import showcase3 from "../../../assets/headerimg-3.jpg";
 import showcase4 from "../../../assets/headerimg-4.jpg";
 import showcase5 from "../../../assets/headerimg-5.jpg";
-import showcase6 from "../../../assets/about-5.jpg";
+import showcase6 from "../../../assets/spices-2.png";
 import showcase7 from "../../../assets/about-4.jpg";
-import showcase8 from "../../../assets/about-3.jpg";
-import showcase9 from "../../../assets/dinner.jpg";
+import showcase8 from "../../../assets/chicken-salad.png";
+import showcase9 from "../../../assets/salad.jpg";
 import showcase10 from "../../../assets/about-1.jpg";
 
 const Showcase = () => {
