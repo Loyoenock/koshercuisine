@@ -59,8 +59,8 @@ const cuisinesDataRight = [
 const LunchTime = () => {
   return (
     <section className="container lunch-time">
-      <h1 heading-secondary>
-        Morning <span>Meal</span>
+      <h1>
+        Lunch <span>Meal</span>
       </h1>
       <div className="container-grid">
         <div>

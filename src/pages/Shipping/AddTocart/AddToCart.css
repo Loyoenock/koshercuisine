@@ -1,4 +1,4 @@
-.section-addtocart {
+.section-addtocart h1 {
   text-align: center;
   padding: 20px;
 }
@@ -31,6 +31,7 @@
 .addtocart-btn {
   width: 100%;
   margin-top: 20px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -40,5 +41,8 @@
   .addtocart-left,
   .addtocart-right {
     flex: 0 0 100%;
+  }
+  .addtocart-btn {
+    width: 100%;
   }
 }

@@ -3,10 +3,13 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import { FaBars, FaTimes } from "react-icons/fa";
+import OrderForm from "../OrderForm/OrderForm";
 import logo from "../../assets/logo.png";
+
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [buttonPopup, setButtonPopup] = useState(false);
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
@@ -46,7 +49,16 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li>
-            <button>Make an Order</button>
+            <button
+              onClick={() => setButtonPopup(true)}
+              className="hero-content__btn"
+            >
+              Make an Order
+            </button>
+            <OrderForm
+              trigger={buttonPopup}
+              setTrigger={setButtonPopup}
+            ></OrderForm>
           </ul>
           <div className="mobile-menu" onClick={handleClick}>
             {click ? (

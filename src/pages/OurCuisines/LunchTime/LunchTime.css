@@ -1,19 +1,28 @@
-.container-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.lunch-time h1 {
+  text-align: center;
+  padding: 2rem;
 }
 
-.lunch-time h1 {
-  font-size: 1.5rem;
-  margin: 2rem 0;
-  text-align: center;
+.container-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
 }
-.lunch-time p {
-  width: 80%;
-  margin: 20px 0;
+
+.container-grid > div {
+  flex: 1;
+  margin: 10px;
 }
-.lunch-time h3 {
-  font-size: 1rem;
-  margin: 0.5rem 0;
+
+@media only screen and (max-width: 768px) {
+  .container-grid {
+    flex-direction: column;
+  }
+
+  .container-grid > div {
+    flex: 1;
+    margin: 10px 0;
+  }
 }

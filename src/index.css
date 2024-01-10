@@ -11,7 +11,7 @@
   --text-color: #555555;
   --accent-color: #fff;
   --main-heading-title: 3rem;
-  --headng-title: 2.5rem;
+  --headng-title: 2rem;
   --headng-subtitle: 1.75rem;
   --main-heading-title-tablet: 2rem;
   --main-heading-title-mobile: 1.75rem;
@@ -22,8 +22,12 @@
   --button-margin: 1.875rem;
 }
 body {
-  font-family: "Lora", serif;
   font-family: "Playfair Display", serif;
+}
+p {
+  font-size: var(--body-font);
+
+  line-height: 1.8;
 }
 
 ul {
@@ -39,11 +43,16 @@ a {
   margin: 0 auto;
   padding: 0 3.125rem;
 }
-
+.primary-heading {
+  font-size: var(--main-heading-title);
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 1.875rem;
+}
 button {
   font-size: 1rem;
   text-transform: Capitalize;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--secondary-color);
   background: var(--main-color);
   padding: 1rem 1.5rem;
@@ -54,6 +63,29 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
+form label {
+  display: none;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+}
+form input,
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 0.5px solid var(--main-color);
+  border-radius: 5px;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--main-color);
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   :root {
     --main-heading-title: 2.5rem;

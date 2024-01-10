@@ -55,7 +55,7 @@ const AddToCart = () => {
       </h1>
       <div className="addtocart-container">
         <div className="container todays-cuisine">
-          <h1 className="heading-secondary">
+          <h1>
             <span>Today's</span> Cuisine
           </h1>
           {cuisineCartLeft.map((item, index) => (

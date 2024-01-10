@@ -6,6 +6,7 @@ import MorningMeal from "./MorningMeal/MorningMeal";
 import LunchTime from "./LunchTime/LunchTime";
 import AssortedCoffee from "./AssortedCoffee/AssortedCoffee";
 import Drinks from "./Drinks/Drinks";
+import "./OurCuisines.css";
 
 const OurCuisines = (props) => {
   return (

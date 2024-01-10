@@ -11,9 +11,12 @@
   align-items: center;
   justify-content: space-between;
   height: 6.25rem;
+  padding: 0 1.875rem;
 }
 .nav-item {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav-item li {
   padding: 0 0.938rem;
@@ -26,7 +29,9 @@
 
 .nav-item .navigation-link:hover {
   text-decoration: underline;
-  padding-bottom: 0.25rem;
+}
+.nav-item button {
+  margin-bottom: 1rem;
 }
 
 .mobile-menu {

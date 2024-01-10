@@ -1,5 +1,3 @@
-// AssortedCoffee.js
-
 import React from "react";
 import "./AssortedCoffee.css";
 import ListItem from "../../../components/ListItem/ListItem";
@@ -35,7 +33,7 @@ const cuisineCoffeeLeft = [
 const AssortedCoffee = () => {
   return (
     <section className="container assorted-coffee">
-      <h1 className="heading-secondary">
+      <h1>
         Assorted <span>Coffee</span>
       </h1>
       <div className="container-grid">

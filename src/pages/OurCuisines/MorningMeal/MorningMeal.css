@@ -1,24 +1,26 @@
-.container-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.morning-meal h1 {
+  text-align: center;
+  padding: 2rem;
 }
 
-.morning-meal h1 {
-  font-size: 1.5rem;
-  margin: 2rem 0;
-  text-align: center;
+.container-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.morning-meal p {
-  width: 80%;
-  margin: 20px 0;
+
+.container-grid > div {
+  flex: 1;
+  margin: 10px;
 }
-.morning-meal h3 {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-@media screen and (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
   .container-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .container-grid > div {
+    flex: 1;
+    margin: 10px 0;
   }
 }

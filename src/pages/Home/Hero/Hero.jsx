@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+
 import "./Hero.css";
+import OrderForm from "../../../components/OrderForm/OrderForm";
 
 const Hero = () => {
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <section className="hero-section hero-section__img">
       <div className="hero-content">
@@ -14,7 +17,16 @@ const Hero = () => {
           invites you to experience the essence of kosher dining. Join us for a
           delightful encounter with tradition and taste.
         </p>
-        <button className="hero-content__btn">Make an Order</button>
+        <button
+          onClick={() => setButtonPopup(true)}
+          className="hero-content__btn"
+        >
+          Make an Order
+        </button>
+        <OrderForm
+          trigger={buttonPopup}
+          setTrigger={setButtonPopup}
+        ></OrderForm>
       </div>
     </section>
   );

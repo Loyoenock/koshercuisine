@@ -31,7 +31,7 @@ const ToDaysCuisine = () => {
   return (
     <section className="todays-cuisine__section">
       <div className="container todays-cuisine">
-        <h1 className="heading-secondary">
+        <h1 className="primary-heading">
           <span>Today's</span> Cuisine
         </h1>
         {CuisineData.map((item, index) => (

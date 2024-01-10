@@ -73,7 +73,7 @@ const Drinks = () => {
   return (
     <section className="drinks">
       <div className="container drinks-container">
-        <h1 className="drinks-title">
+        <h1>
           Soft <span>Drinks</span>
         </h1>
 
