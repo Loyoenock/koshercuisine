@@ -33,7 +33,7 @@ const cuisineCoffeeLeft = [
 const AssortedCoffee = () => {
   return (
     <section className="container assorted-coffee">
-      <h1>
+      <h1 className="primary-heading">
         Assorted <span>Coffee</span>
       </h1>
       <div className="container-grid">
