@@ -50,14 +50,11 @@ const cuisineCartRight = [
 const AddToCart = () => {
   return (
     <section className="section-addtocart">
-      <h1 className="heading-addtocart">
+      <h1 className="primary-heading">
         Click <span> to add to Cart</span>
       </h1>
       <div className="addtocart-container">
         <div className="container todays-cuisine">
-          <h1>
-            <span>Today's</span> Cuisine
-          </h1>
           {cuisineCartLeft.map((item, index) => (
             <ListItem
               key={index}
@@ -69,9 +66,6 @@ const AddToCart = () => {
           ))}
         </div>
         <div className="container todays-cuisine">
-          <h1 className="heading-secondary">
-            <span>Today's</span> Cuisine
-          </h1>
           {cuisineCartRight.map((item, index) => (
             <ListItem
               key={index}
@@ -84,7 +78,7 @@ const AddToCart = () => {
         </div>
       </div>
       <div className="addtocart-btn">
-        <h1 className="heading-addtocart">
+        <h1 className="primary-heading">
           <span>Have you </span> Finished?
         </h1>
         <button className="btn-addtocart"> Show cart $ Checkout</button>
